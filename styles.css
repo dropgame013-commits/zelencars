@@ -306,6 +306,7 @@ body::after{
 
 .lang-switch{
   display: flex; align-items: center; gap: 6px;
+  padding: 12px 2px;
   font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.06em;
   color: var(--white-faint);
 }
@@ -313,7 +314,7 @@ body::after{
 .lang-switch .is-active{ color: var(--white); }
 .lang-sep{ color: var(--white-faint); }
 
-.menu-btn{ display: flex; align-items: center; gap: 12px; }
+.menu-btn{ display: flex; align-items: center; gap: 12px; padding: 12px 2px; }
 .menu-btn-label{ font-family: var(--f-mono); font-size: 12px; letter-spacing: 0.14em; }
 .menu-btn-icon{ display: flex; flex-direction: column; gap: 5px; width: 20px; }
 .menu-btn-icon i{ display: block; height: 1px; width: 100%; background: var(--white); transition: transform 0.3s var(--ease), opacity 0.3s var(--ease); }
@@ -472,6 +473,10 @@ body::after{
 .scroll-cue i{ width: 1px; height: 26px; background: linear-gradient(var(--white-faint), transparent); position: relative; overflow: hidden; }
 .scroll-cue i::after{ content:''; position:absolute; top:-100%; left:0; width:100%; height:100%; background: var(--green-500); animation: cueDrop 1.8s var(--ease-in-out) infinite; }
 @keyframes cueDrop{ to{ top: 100%; } }
+
+@media (max-width: 699px), (max-height: 600px){
+  .scroll-cue{ display: none; }
+}
 
 
 /* ============================================================
