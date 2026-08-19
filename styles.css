@@ -529,13 +529,14 @@ body::after{
 .work-grid{
   display: flex; flex-wrap: wrap;
   align-items: flex-start;
-  gap: clamp(3px, 0.8vw, 10px);
+  gap: clamp(8px, 1.6vw, 22px);
   margin: 0 var(--edge);
 }
 .work-item{
   position: relative;
   cursor: pointer;
   background: var(--black-soft);
+  max-height: 68vh;
 }
 .work-item .media-slot{ box-shadow: 0 0 0 1px var(--line) inset; }
 .work-caption{
